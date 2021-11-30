@@ -1,0 +1,19 @@
+﻿<Window x:Class="parcer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:parcer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="195" Width="552">
+    <Grid>
+        <Button x:Name="buttongo" Content="GO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" IsEnabled="False" Margin="443,137,0,0" Click="Button_Click"/>
+        <TextBox x:Name="url_textbox" Height="30" Margin="77,27,25,110" TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Padding="5" />
+        <TextBox x:Name="xpath_textbox" HorizontalAlignment="Left" Height="30" Margin="77,91,0,46" TextWrapping="Wrap" Width="442"  Padding="5" TextChanged="TextBox_TextChanged_3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,33,0,0" TextWrapping="Wrap" Text="URL" VerticalAlignment="Top" Height="18" TextAlignment="Center" Width="54"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,97,0,0" TextWrapping="Wrap" Text="Xpath" VerticalAlignment="Top" Height="22" TextAlignment="Center" Width="54"/>
+        <CheckBox x:Name="OneCheck" Content="one url" HorizontalAlignment="Left" Margin="350,140,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Height="14" RenderTransformOrigin="0.491,0.783"/>
+
+
+    </Grid>
+</Window>
